@@ -5,6 +5,4 @@ $(document).ready(function(){
 		var link = event.toElement.getAttribute("href");
 		$("document").load(link);
 	});
-
-
 });

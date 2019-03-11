@@ -1,5 +1,6 @@
 html, body{
 	background-color: #444444;
+	margin: 0;
 }
 .header{
 	background-color: #222222;
@@ -10,12 +11,9 @@ html, body{
 	opacity: 0.85;
 }
 .logo{
-	background-color: #777777;
+	background-color: transparent;
 	margin: auto;
-	top: 40%;
 	text-align: center;
-	border: solid;
-	border-style: dashed;
 	width: 50%;
 	font-size: 68px;
 	color: #555555;
@@ -37,11 +35,12 @@ ul{
 	display: inline;
 	width: 100%;
 	top: 0;
-} 
+}
 li{
 	display: inline;
 	padding: 15px;
 	height: 100%;
+	margin: 1;
 }
 li:hover{
 	background-color: #555;
@@ -49,6 +48,11 @@ li:hover{
 }
 #menu{
 	float: right;
+}
+#logo{
+	width: 50%;
+	height: 50%;
+	opacity: 0.65;
 }
 .delete{
 	width: 10%;
