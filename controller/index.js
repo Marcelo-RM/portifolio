@@ -23,7 +23,7 @@ $(document).ready(function () {
 			}
 		}
 		if(lastScrollTop > thisScrollTop){
-			if(divMarginLeft > 0 && thisScrollTop < divWidth){
+			if(divMarginLeft > 0 && thisScrollTop < (docWidth - divWidth)){
 				$(".delete").css({
 					"marginLeft": ($(window).scrollTop()) + "px"
 				}, "slow");
