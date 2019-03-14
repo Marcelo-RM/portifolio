@@ -1,3 +1,5 @@
+var lastScrollTop;
+
 $(document).ready(function () {
 	$(".header").css("height", window.innerHeight);
 
@@ -6,15 +8,27 @@ $(document).ready(function () {
 		$("document").load(link);
 	});
 
-	$(window).scroll(function () {
+	$(window).scroll(function (event) {
+		var thisScrollTop = $(window).scrollTop(); 
 		var docWidth = $(window).width();
-		var divMargin = $(".delete").offset().left;
+		var divMarginLeft = $(".delete").offset().left;
 		var divWidth = $(".delete").width();
-		var soma = divMargin + divWidth;
-		if(soma < docWidth){
-			$(".delete").css({
-				"marginLeft": ($(window).scrollTop()) + "px"
-			}, "slow");
+		var soma = divMarginLeft + divWidth;
+		
+		if( lastScrollTop < thisScrollTop){
+			if(soma < docWidth){
+				$(".delete").css({
+					"marginLeft": ($(window).scrollTop()) + "px"
+				}, "slow");
+			}
 		}
+		if(lastScrollTop > thisScrollTop){
+			if(divMarginLeft > 0 && thisScrollTop < divWidth){
+				$(".delete").css({
+					"marginLeft": ($(window).scrollTop()) + "px"
+				}, "slow");
+			}
+		}
+		lastScrollTop = thisScrollTop;
 	});
 });

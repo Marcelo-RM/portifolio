@@ -51,11 +51,17 @@ li:hover{
 	height: 50%;
 	opacity: 0.65;
 }
+
 .delete{
-	width: 10%;
+	width: 30%;
 	color: #5555FF;
+}
+.links{
+	height: 100%;
+	margin: auto;
 }
 footer{
 	width: 100%;
+	height: 40px;
 	bottom: 0;
 }
