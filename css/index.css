@@ -44,6 +44,14 @@ li:hover{
 	color: orange;
 	cursor: pointer;
 }
+@media screen and (max-width: 600px){
+	ul li{
+		display: none;
+	}
+	#menu{
+		display: inline;
+	}
+}
 #menu{
 	float: right;
 }
