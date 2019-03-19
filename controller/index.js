@@ -3,7 +3,13 @@ $(document).ready(function () {
 
 	$("li").click(function (event) {
 		var link = event.toElement.getAttribute("href");
-		$("document").load(link);
+		var text = event.toElement.innerText;
+
+		if (text !== "MENU") {
+			$(document).load(link);
+		} else {
+			//HERE IS THE CODE TO SHOW THE MENU IN CELLPHONES
+		}
 	});
 
 	$(window).scroll(function (event) {

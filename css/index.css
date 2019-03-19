@@ -2,6 +2,9 @@ html, body{
 	background-color: #444444;
 	margin: 0;
 }
+a{
+	text-decoration: none; 
+}
 /* HEADER */
 .header{
 	background-color: #222222;
@@ -47,6 +50,7 @@ li:hover{
 }
 #menu{
 	float: right;
+	display: none;
 }
 #logo{
 	width: 50%;
@@ -62,10 +66,16 @@ li:hover{
 }
 #left{
 	width: 50%;
+	border: 2px solid red;
+	padding: 0;
+	margin: 0;
 }
 #right{
 	width: 50%;
 	float: right;
+	border: 2px solid red;
+	padding: 0;
+	margin: 0;
 }
 /* END BODY */
 
@@ -92,5 +102,8 @@ li:hover{
 	}
 	#menu{
 		display: inline;
+	}
+	#logo{
+		width: 90%;
 	}
 }
