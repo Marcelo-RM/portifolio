@@ -63,6 +63,10 @@ li:hover{
 	bottom: 0;
 	text-align: center;
 }
+#arrowDown:hover{
+	cursor: pointer;
+	color: orange;
+}
 /* END HEADER */
 
 /* BODY */

@@ -35,6 +35,14 @@ $(document).ready(function () {
 			}, "slow");
 		}
 	});
+	
+	$("#linkArrow").click(function(event){
+		event.preventDefault();
+		var id = this.getAttribute('href');
+		$("html, body").animate({
+			scrollTop: $(id).offset().top
+		});
+	});
 });
 function share(event){
 	var site = event.getAttribute('href');
