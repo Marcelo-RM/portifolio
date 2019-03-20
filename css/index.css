@@ -12,7 +12,6 @@ a{
 	top: 0;
 	right: 0;
 	position: relative;
-	opacity: 0.65;
 }
 .logo{
 	background-color: transparent;
@@ -55,7 +54,6 @@ li:hover{
 #logo{
 	width: 50%;
 	height: 50%;
-	opacity: 0.65;
 }
 /* END HEADER */
 
@@ -80,17 +78,32 @@ li:hover{
 /* END BODY */
 
 /* FOOTER */
-#whatsapp, #facebook, #instagram, #linkedin{
-	font-size: 30px;
+#whatsapp, #facebook, #github, #linkedin{
+	width: 35px;
+	height: 35px;
+	padding: 3px;
 	color: white;
 	margin-top: 5px;
+	border-radius: 20%;
+}
+#whatsapp:hover{
+	background-color: green;
+}
+#facebook:hover{
+	background-color: blue;
+}
+#linkedin:hover{
+	background-color: darkblue;
+}
+#github:hover{
+	background-color: white;
+	color: black;
 }
 #footer{
 	width: 100%;
 	height: 40px;
 	bottom: 0;
 	background-color: #222222;
-	opacity: 0.65;
 	clear: both;
 }
 /* END FOOTER */
