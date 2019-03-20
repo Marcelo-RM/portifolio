@@ -55,6 +55,14 @@ li:hover{
 	width: 50%;
 	height: 50%;
 }
+#arrowDown{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	color: #ccc;
+	bottom: 0;
+	text-align: center;
+}
 /* END HEADER */
 
 /* BODY */
