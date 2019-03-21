@@ -67,6 +67,26 @@ li:hover{
 	cursor: pointer;
 	color: orange;
 }
+#arrowDown{
+	animation: test 5s ease infinite;
+}
+@keyframes test {
+  0% {
+    bottom: 0;
+  }
+  5% {
+    bottom: 10px;
+  }
+  10% {
+  	bottom: 0;
+  }
+  15% {
+  	bottom: 10px;
+  }
+  20% {
+  	bottom: 0;
+  }
+}
 /* END HEADER */
 
 /* BODY */
