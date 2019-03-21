@@ -1,50 +1,78 @@
+/**********************/
+/* INTERNAL METHOD    */
+/**********************/
+
 $(document).ready(function () {
 	$(".header").css("height", $(window).innerHeight());
-
-	$("li").click(function (event) {
-		var link = event.toElement.getAttribute("href");
-		var text = event.toElement.innerText;
-
-		if (text !== "MENU") {
-			$(document).load(link);
-		} else {
-			//HERE IS THE CODE TO SHOW THE MENU IN CELLPHONES
-		}
-	});
-
-	$(window).scroll(function (event) {
-		var thisScrollTop = $(window).scrollTop(),
-			docWidth = $(window).width(),
-			divMarginLeft = $("#left").offset().left,
-			divWidth = $("#left").width(),
-			soma = divMarginLeft + divWidth;
-		
-		if(thisScrollTop >= (docWidth - divWidth)){
-			$("#left").css({
-				"marginLeft": (docWidth - divWidth)
-			});
-			$("#right").css({
-				"marginRight": (docWidth - divWidth)
-			});
-		}else if (soma <= docWidth) {
-			$("#left").css({
-				"marginLeft": $(window).scrollTop() + "px"
-			}, "slow");
-			$("#right").css({
-				"marginRight": $(window).scrollTop() + "px"
-			}, "slow");
-		}
-	});
-	
-	$("#linkArrow").click(function(event){
-		event.preventDefault();
-		var id = this.getAttribute('href');
-		$("html, body").animate({
-			scrollTop: $(id).offset().top
-		});
-	});
 });
+
+/**********************/
+/* EVENT HANDLERS     */
+/**********************/
+
+/**
+ * header list menu method
+ * @event is the click event
+ */
+ 
+$("li").click(function (event) {
+	var link = event.toElement.getAttribute("href");
+	var text = event.toElement.innerText;
+
+	if (text !== "MENU") {
+		$(document).load(link);
+	} else {
+		//HERE IS THE CODE TO SHOW THE MENU IN CELLPHONES
+	}
+});
+
+/**
+ * Click in social medias in footer
+ * @event is the clicked object
+ */
+ 
 function share(event){
 	var site = event.getAttribute('href');
 	window.open(site);
 }
+
+/**
+ * Click event in arrow down in header
+ * @event is the link object
+ */
+ 
+function hideHeader(event){
+	var id = event.getAttribute('local');
+	$("html, body").animate({
+		scrollTop: $(id).offset().top
+	}, "slow");
+}
+
+/**
+ * This is a metho to move the div when the page is moved
+ * @event is defined but never is used
+ */
+ 
+$(window).scroll(function (event) {
+	var thisScrollTop = $(window).scrollTop(),
+		docWidth = $(window).width(),
+		divMarginLeft = $("#left").offset().left,
+		divWidth = $("#left").width(),
+		soma = divMarginLeft + divWidth;
+	
+	if(thisScrollTop >= (docWidth - divWidth)){
+		$("#left").css({
+			"marginLeft": (docWidth - divWidth)
+		});
+		$("#right").css({
+			"marginRight": (docWidth - divWidth)
+		});
+	}else if (soma <= docWidth) {
+		$("#left").css({
+			"marginLeft": $(window).scrollTop() + "px"
+		}, "slow");
+		$("#right").css({
+			"marginRight": $(window).scrollTop() + "px"
+		}, "slow");
+	}
+});
