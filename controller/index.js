@@ -1,29 +1,32 @@
 /**********************/
-/* INTERNAL METHOD    */
+/* AUTOMATIC METHODS    */
 /**********************/
 
 $(document).ready(function () {
 	$(".header").css("height", $(window).innerHeight());
+	
+	/**
+	 * header list menu method
+	 * @event is the click event
+	 */
+	 
+	$("li").click(function (event) {
+		var link = event.toElement.getAttribute("href");
+		var text = event.toElement.innerText;
+	
+		if (text !== "MENU") {
+			$("html, body").animate({
+				scrollTop: $(link).offset().top
+			}, "slow");
+		} else {
+			//HERE IS THE CODE TO SHOW THE MENU IN CELLPHONES
+	}
 });
 
 /**********************/
 /* EVENT HANDLERS     */
 /**********************/
 
-/**
- * header list menu method
- * @event is the click event
- */
- 
-$("li").click(function (event) {
-	var link = event.toElement.getAttribute("href");
-	var text = event.toElement.innerText;
-
-	if (text !== "MENU") {
-		$(document).load(link);
-	} else {
-		//HERE IS THE CODE TO SHOW THE MENU IN CELLPHONES
-	}
 });
 
 /**
