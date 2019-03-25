@@ -21,21 +21,20 @@ $(document).ready(function () {
 			}, "slow");
 		} else {
 			//HERE IS THE CODE TO SHOW THE MENU IN CELLPHONES
-	}
+		}
+	});
 });
 
 /**********************/
 /* EVENT HANDLERS     */
 /**********************/
 
-});
-
 /**
  * Click in social medias in footer
  * @event is the clicked object
  */
 
-function share(event){
+function share(event) {
 	var site = event.getAttribute('href');
 	window.open(site);
 }
@@ -45,11 +44,36 @@ function share(event){
  * @event is the link object
  */
 
-function hideHeader(event){
+function hideHeader(event) {
 	var id = event.getAttribute('local');
 	$("html, body").animate({
 		scrollTop: $(id).offset().top
 	}, "slow");
+}
+
+/**
+ * This is a function to show the form in right side
+ * @event Called after a click in div contact
+ */
+
+function openForm(event) {
+	var button = document.getElementById('mailButton');
+	var form = document.getElementById('form');
+	if (form.style.right !== '-28px') {
+		$("#mailButton").animate({
+			right: '194px'
+		}, "slow");
+		$("#form").animate({
+			right: '-28px'
+		}, "slow");
+	}else{
+		$("#mailButton").animate({
+			right: '-28px'
+		}, "slow");
+		$("#form").animate({
+			right: '-250px'
+		}, "slow");
+	}
 }
 
 /**
@@ -64,14 +88,14 @@ $(window).scroll(function (event) {
 		divWidth = $("#left").width(),
 		soma = divMarginLeft + divWidth;
 
-	if(thisScrollTop >= (docWidth - divWidth)){
+	if (thisScrollTop >= (docWidth - divWidth)) {
 		$("#left").css({
 			"marginLeft": (docWidth - divWidth)
 		});
 		$("#right").css({
 			"marginRight": (docWidth - divWidth)
 		});
-	}else if (soma <= docWidth) {
+	} else if (soma <= docWidth) {
 		$("#left").css({
 			"marginLeft": $(window).scrollTop() + "px"
 		}, "slow");
