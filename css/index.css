@@ -24,7 +24,7 @@ a{
 }
 /* MAIL CONTACT */
 #mailButton{
-	right: -28px;  /* 194px Expandido */
+	right: 219px;  /* 219px Expandido || -28px Ao canto */
 	top: 280px;
 	position: fixed;
 	z-index: 3000;
@@ -37,7 +37,7 @@ a{
 	transform: rotate(-90deg);
 }
 #form{
-	right: -250px;  /* -28px Expandido */
+	right: -3px;  /* -3px Expandido || -250px Oculto */
 	top: 100px;
 	position: fixed;
 	z-index: 3000;
@@ -46,6 +46,13 @@ a{
 	border: 3px solid orange;
 	background-color: #ccc;
 	margin: 0;
+}
+#form{
+	padding: 10px;
+}
+#submit{
+	position: absolute;
+	right: 29px;
 }
 
 /* HEADER */

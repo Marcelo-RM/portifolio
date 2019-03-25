@@ -59,12 +59,12 @@ function hideHeader(event) {
 function openForm(event) {
 	var button = document.getElementById('mailButton');
 	var form = document.getElementById('form');
-	if (form.style.right !== '-28px') {
+	if (form.style.right !== '-3px') {
 		$("#mailButton").animate({
-			right: '194px'
+			right: '219px'
 		}, "slow");
 		$("#form").animate({
-			right: '-28px'
+			right: '-3px'
 		}, "slow");
 	}else{
 		$("#mailButton").animate({
