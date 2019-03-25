@@ -80,20 +80,18 @@ li:hover{
 	color: #ccc;
 	bottom: 0;
 	text-align: center;
+	animation: arrowDown 3s linear infinite;
 }
 #arrowDown:hover{
 	cursor: pointer;
 	color: orange;
 }
-#arrowDown{
-	animation: arrowDown 5s linear both infinite;
-}
 @keyframes arrowDown {
   0% { bottom: 0;}
-  5% { bottom: 10px; }
-  10% { bottom: 0; }
-  15% { bottom: 10px; }
+  10% { bottom: 10px; }
   20% { bottom: 0; }
+  30% { bottom: 10px; }
+  40% { bottom: 0; }
 /*  50% { transform: rotate(180deg);}
   100% { transform: rotate(360deg);}*/
 }

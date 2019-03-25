@@ -53,7 +53,7 @@ function hideHeader(event){
 }
 
 /**
- * This is a metho to move the div when the page is moved
+ * This is a method to move the div when the page is moved
  * @event is defined but never is used
  */
 
