@@ -88,12 +88,12 @@ $(window).scroll(function (event) {
 		divWidth = $("#left").width(),
 		soma = divMarginLeft + divWidth;
 
-	if (thisScrollTop >= (docWidth - divWidth)) {
+	if (thisScrollTop >= (docWidth - divWidth) - 6) {  //Não entendo o porque é necessário a auteração de alguns pixels, mas é necessário
 		$("#left").css({
-			"marginLeft": (docWidth - divWidth)
+			"marginLeft": (docWidth - divWidth) - 6
 		});
 		$("#right").css({
-			"marginRight": (docWidth - divWidth)
+			"marginRight": (docWidth - divWidth) - 6
 		});
 	} else if (soma <= docWidth) {
 		$("#left").css({
