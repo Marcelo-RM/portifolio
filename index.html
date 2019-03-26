@@ -11,22 +11,24 @@
         <script src="/controller/index.js"></script>
     </head>
     <body>
-        <div id="busy" class="w3-display-container">
-          <img id="busyImg" alt="Aguarde" class="w3-display-middle" src="/imgs/logo.svg"/>
+		<div id="busy" class="w3-display-container">
+			<div class="w3-display-middle">
+				<img id="busyImg" alt="Aguarde" src="/imgs/logo.svg"/>
+				</div>
         </div>
         <!-- CONTACT -->
         <div id="mailButton" onclick="openForm(this)">contact</div>
         <div id="form" class="w3-round-large">
-        	<form action="/">
-        		<p>Gostaria de ouvir o que você tem à dizer, por favor entre em contato para dicas e reclamações!</p>
-        		<label>Email:</label> <br>
-        		<input type="email" id="email" placeholder="Digite seu email" class=""> 
-        		<br>
-        		<label>Mensagem:</label><br>
-        		<input type="text" id="mensagem" placeholder="Digite sua mensagem">
-        		<br>
-        		<input type="submit" id="submit" value="Enviar">
-        	</form>
+			<form action="/">
+				<p>Gostaria de ouvir o que você tem à dizer, por favor entre em contato para dicas e reclamações!</p>
+				<label>Email:</label> <br>
+				<input type="email" id="email" placeholder="Digite seu email" class=""> 
+				<br>
+				<label>Mensagem:</label><br>
+				<input type="text" id="mensagem" placeholder="Digite sua mensagem">
+				<br>
+				<input type="submit" id="submit" value="Enviar">
+			</form>
         </div>
         
         <header>
@@ -45,7 +47,7 @@
                 </div>
             </div>
             <a href="javascript:void(0)" onclick="hideHeader(this)" local="#left" id="linkArrow">
-            	<img id="arrowDown" class="w3-display-bottommiddle fas fa-angle-down">
+				<img id="arrowDown" class="w3-display-bottommiddle fas fa-angle-down">
             </a>
         </header>
         <div class="delete">
@@ -53,12 +55,12 @@
             <p id="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </div>
         <footer id="footer" class="w3-display-container">
-        	<div class="w3-display-middle" id="links">
-        		<img onclick="share(this)" id="facebook" href="https://www.w3schools.com/js/default.asp" class="fab fa-facebook-f">
-        		<img onclick="share(this)" id="github" href="https://github.com/Marcelo-RM" class="fab fa-github">
-        		<img onclick="share(this)" id="linkedin" class=" fab fa-linkedin-in">
-        		<img onclick="share(this)" id="whatsapp" class="fab fa-whatsapp">
-        	</div>
+			<div class="w3-display-middle" id="links">
+				<img onclick="share(this)" id="facebook" href="https://www.w3schools.com/js/default.asp" class="fab fa-facebook-f">
+				<img onclick="share(this)" id="github" href="https://github.com/Marcelo-RM" class="fab fa-github">
+				<img onclick="share(this)" id="linkedin" class=" fab fa-linkedin-in">
+				<img onclick="share(this)" id="whatsapp" class="fab fa-whatsapp">
+			</div>
         </footer>
     </body>
 </html>
