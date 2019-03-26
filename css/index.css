@@ -99,7 +99,6 @@ li{
 	margin: 1;
 }
 li:hover{
-	background-color: #555;
 	color: orange;
 	cursor: pointer;
 	border-bottom: orange 2px solid;
@@ -139,18 +138,18 @@ li:hover{
 /* BODY */
 .delete{
 	width: 100%;
-	color: #5555FF;
+	color: #ccc;
 }
 #left{
 	width: 50%;
-	border: 2px solid red;
+	border: 2px solid orange;
 	padding: 0;
 	margin: 0;
 }
 #right{
 	width: 50%;
 	float: right;
-	border: 2px solid red;
+	border: 2px solid orange;
 	padding: 0;
 	margin: 0;
 }
