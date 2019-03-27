@@ -35,7 +35,7 @@ $(document).ready(function () {
  */
 
 function share(event) {
-	var site = event.getAttribute('href');
+	var site = encodeURI(event.getAttribute('href'));
 	window.open(site);
 }
 
