@@ -249,7 +249,7 @@ li:hover {
     width: 50%;
     float: right;
     border: 2px solid orange;
-    padding: 0;
+    padding: 5px;
     margin: 0;
     clear: both;
 }
@@ -312,5 +312,11 @@ li:hover {
     }
     #logo {
         width: 90%;
+    }
+    #left {
+    	width: 100%;
+    }
+    #right {
+    	width: 100%;
     }
 }
