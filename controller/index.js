@@ -47,7 +47,7 @@ function share(event) {
 function hideHeader(event) {
 	var id = event.getAttribute('local');
 	$("html, body").animate({
-		scrollTop: $(id).offset().top
+		scrollTop: $(id).offset().top - $(".headerBar").height()
 	}, "slow");
 }
 
@@ -80,7 +80,8 @@ function openForm(event) {
  * This is a method to move the div when the page is moved
  * @event is defined but never is used
  */
-
+/*     REMOVIDO, Mas ainda será utilizado */
+/*
 $(window).scroll(function (event) {
 	var thisScrollTop = $(window).scrollTop(),
 		docWidth = $(window).width(),
@@ -104,3 +105,4 @@ $(window).scroll(function (event) {
 		}, "slow");
 	}
 });
+*/
