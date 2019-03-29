@@ -11,7 +11,7 @@ $(document).ready(function () {
 	 * @event is the click event
 	 */
 
-	$("li").click(function (event) {
+	$("ul li").click(function (event) {
 		var link = event.toElement.getAttribute("href");
 		var text = event.toElement.innerText;
 
