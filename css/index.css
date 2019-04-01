@@ -293,12 +293,17 @@ a {
 
 
 /* END FOOTER */
-
-
+.menuPhone{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #222;
+	text-align: right;
+}
 /* Code for development responsive */
 
 @media screen and (max-width: 600px) {
-    ul li {
+    .listBar li {
         display: none;
     }
     #menu {
