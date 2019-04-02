@@ -176,12 +176,12 @@ a {
 
 /* BODY */
 
-.delete {
+#subBody {
     width: 100%;
     color: #ccc;
 }
 
-#left {
+#formacaoContainer {
     width: 50%;
     padding-left: 5px;
     margin: 0;
@@ -239,15 +239,40 @@ a {
     top: -3px;
 }
 
-#right {
+#expContainer {
     width: 50%;
     float: right;
-    border: 2px solid #06bcfb;
     padding: 5px;
     margin: 0;
+    margin-bottom: 20px;
     clear: both;
 }
-
+.exp{
+	color: #ccc;
+}
+.exp h3{
+	color: #222;
+	font-size: 18px;
+	background-color: #06bcfb;
+	padding: 8px;
+	border-top-left-radius: 16px;
+	padding-left: 16px;
+	padding-bottom: 20px;
+	margin-bottom: -22px;
+	cursor: pointer;
+	box-shadow: 0 -1px 20px 5px #333;
+}
+.exp p{
+	display: none;
+}
+.exp p:hover{
+	display: block;
+}
+.expShow{
+	padding: 16px;
+	background-color: #222;
+	margin-bottom: -22px;
+}
 
 /* END BODY */
 
@@ -312,10 +337,10 @@ a {
     #logo {
         width: 90%;
     }
-    #left {
+    #formacaoContainer {
     	width: 100%;
     }
-    #right {
+    .expContainer {
     	width: 100%;
     }
 }

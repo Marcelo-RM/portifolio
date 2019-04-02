@@ -12,29 +12,57 @@ $(document).ready(function () {
 	 */
 
 	$("ul li").click(function (event) {
-		var link = event.toElement.getAttribute("href");
-		var text = event.toElement.innerText;
+		var link = event.target.getAttribute("href");
+		var text = event.target.innerText;
 		var className = $(".listBar li")[0].getAttribute("class");
 
 		if (text !== "MENU") {
 			$("html, body").animate({
 				scrollTop: $(link).offset().top
 			}, "slow");
-			if(className){
+			if (className) {
 				$(".listBar li").removeClass("menuPhone");
-				$(".listBar li").css({display: "none"});
-				$("#menu").css({display: "inline"});
+				$(".listBar li").css({
+					display: "none"
+				});
+				$("#menu").css({
+					display: "inline"
+				});
 			}
 		} else {
 			//HERE IS THE CODE TO SHOW THE MENU IN CELLPHONES
-			if(className){
+			if (className) {
 				$(".listBar li").removeClass("menuPhone");
-				$(".listBar li").css({display: "none"});
-				$(".listBar #menu").css({display: "inline"});
-			}else{
+				$(".listBar li").css({
+					display: "none"
+				});
+				$(".listBar #menu").css({
+					display: "inline"
+				});
+			} else {
 				$(".listBar li").addClass("menuPhone");
-				$(".listBar li").css({display: "block"});
+				$(".listBar li").css({
+					display: "block"
+				});
 			}
+		}
+	});
+
+	/**
+	 * Metodo que exibirá os dados ocultos abaixo do cabeçalho de experiencias
+	 * @event {object} elemento da view, h2 usando target
+	 */
+
+	$(".exp").click(function (event) {
+		var pId = event.target.parentNode.id;
+		var show = $("#" + pId + " p")[0].className;
+		if (show) {
+			$("#" + pId + " p").slideUp(function () {
+				$("#" + pId + " p").removeClass("expShow");
+			});
+		} else {
+			$("#" + pId + " p").addClass("expShow");
+			$("#" + pId + " p").slideDown();
 		}
 	});
 });
@@ -80,7 +108,7 @@ function openForm(event) {
 		$("#form").animate({
 			right: '-10px'
 		}, "slow");
-	}else{
+	} else {
 		$("#mailButton").animate({
 			right: '-28px'
 		}, "slow");
