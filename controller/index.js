@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 		if (text !== "MENU") {
 			$("html, body").animate({
-				scrollTop: $(link).offset().top
+				scrollTop: $(link).offset().top - 50
 			}, "slow");
 			if (className) {
 				$(".listBar li").removeClass("menuPhone");
