@@ -119,6 +119,7 @@ a {
 }
 
 .listBar {
+	background: #222222;
     list-style: none;
     display: inline;
     top: 0;
