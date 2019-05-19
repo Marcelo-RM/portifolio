@@ -1,110 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Marcelo Montalvão</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href=" css/index.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script  src="controller/index.js"></script>
-    </head>
-    <body>
-		<div id="busy" class="w3-display-container">
-			<div class="w3-display-middle">
-				<img id="busyImg" alt="Aguarde"  src="imgs/logo.svg"/>
-				</div>
-        </div>
-        <!-- CONTACT -->
-        <div id="mailButton" onclick="openForm(this)">contato</div>
-        <div id="form" class="w3-round-large">
-			<form action="/">
-				<p>Gostaria de ouvir o que você tem à dizer, por favor entre em contato para dicas e reclamações!</p>
-				<label>Email:</label> <br>
-				<input type="email" id="email" placeholder="Digite seu email" class="">
-				<br>
-				<label>Mensagem:</label><br>
-				<textArea type="text" id="mensagem" placeholder="Digite sua mensagem"></textArea>
-				<br>
-				<input type="submit" id="submit" value="Enviar">
-			</form>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelo Montalvão</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href=" css/index.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script  src="controller/index.js"></script>
+</head>
+<body>
+  <div id="busy" class="w3-display-container">
+    <div class="w3-display-middle">
+      <img id="busyImg" alt="Aguarde"  src="imgs/logo.svg"/>
+    </div>
+  </div>
+  <!-- CONTACT -->
+  <div id="mailButton" onclick="openForm(this)">contato</div>
+  <div id="form" class="w3-round-large">
+    <form action="/">
+      <p>Gostaria de ouvir o que você tem à dizer, por favor entre em contato para dicas e reclamações!</p>
+      <label>Email:</label> <br>
+      <input type="email" id="email" placeholder="Digite seu email" class="">
+      <br>
+      <label>Mensagem:</label><br>
+      <textArea type="text" id="mensagem" placeholder="Digite sua mensagem"></textArea>
+      <br>
+      <input type="submit" id="submit" value="Enviar">
+    </form>
+  </div>
 
-        <header>
-            <div class="header w3-display-container" id="header">
-                <div class="headerBar">
-                    <ul class="listBar">
-                        <li href="#header">HOME</li>
-                        <li href="#formacaoContainer">FORMAÇÃO</li>
-                        <li href="#expContainer">EXPERIÊNCIA</li>
-                        <li href="#links">CONTATO</li>
-                        <li id="menu" href="#">MENU</li>
-                    </ul>
-                </div>
-                <div class="logo w3-display-middle">
-                    <img id="logo"  src="imgs/logo.svg"/>
-                </div>
-            </div>
-            <a href="javascript:void(0)" onclick="hideHeader(this)" local="#formacaoContainer" id="linkArrow">
-              <img id="arrowDown" class="w3-display-bottommiddle fas fa-angle-down">
-            </a>
-        </header>
-        <div id="subBody">
-			<div id="formacaoContainer">
-				<h2>Experiências</h2>
-				<ol class="activity-feed">
-					<li class="feed-item">
-						<span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-						<p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
-					</li>
-					<li class="feed-item">
-						<span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-						<p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
-					</li>
-					<li class="feed-item">
-						<span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-						<p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
-					</li>
-					<li class="feed-item">
-						<span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-						<p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
-					</li>
-					<li class="feed-item">
-						<span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-						<p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
-					</li>
-				</ol>
-            </div>
-            <div id="expContainer">
-				<h2>Formação Acadêmica</h2>
-				<div id="exp01" class="exp">
-					<h3>Lorem ipsum</h3>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-					</p>
-				</div>
-				<div id="exp02" class="exp">
-					<h3>Lorem ipsum</h3>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-					</p>
-				</div>
-				<div id="exp03" class="exp">
-					<h3>Lorem ipsum</h3>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-					</p>
-				</div>
-			</div>
-        </div>
-        <footer id="footer" class="w3-display-container">
-			<div class="w3-display-middle" id="links">
-				<img onclick="share(this)" id="facebook" href="https://www.facebook.com/people/Marcelo-Rodrigues/100004629636017" class="fab fa-facebook-f">
-				<img onclick="share(this)" id="github" href="https://github.com/Marcelo-RM" class="fab fa-github">
-				<img onclick="share(this)" id="linkedin" href="https://www.linkedin.com/in/marcelo-rodrigues-76046717b/" class=" fab fa-linkedin-in">
-				<img onclick="share(this)" id="whatsapp" href="https://wa.me/5561998657241/?text='Hi, I saw your site'" class="fab fa-whatsapp">
-			</div>
-        </footer>
-    </body>
+  <header>
+    <div class="header w3-display-container" id="header">
+      <div class="headerBar">
+        <ul class="listBar">
+          <li href="#header">HOME</li>
+          <li href="#formacaoContainer">FORMAÇÃO</li>
+          <li href="#expContainer">EXPERIÊNCIA</li>
+          <li href="#links">CONTATO</li>
+          <li id="menu" href="#">MENU</li>
+        </ul>
+      </div>
+      <div class="logo w3-display-middle">
+        <img id="logo"  src="imgs/logo.svg"/>
+      </div>
+    </div>
+    <a href="javascript:void(0)" onclick="hideHeader(this)" local="#formacaoContainer" id="linkArrow">
+      <img id="arrowDown" class="w3-display-bottommiddle fas fa-angle-down">
+    </a>
+  </header>
+  <div id="subBody">
+    <div id="formacaoContainer">
+      <h2>Experiências</h2>
+      <ol class="activity-feed">
+        <li class="feed-item">
+          <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+          <p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
+        </li>
+        <li class="feed-item">
+          <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+          <p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
+        </li>
+        <li class="feed-item">
+          <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+          <p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
+        </li>
+        <li class="feed-item">
+          <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+          <p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
+        </li>
+        <li class="feed-item">
+          <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+          <p>Lorem ipsum <i>00/00/0000 à 00/00/0000</i></p>
+        </li>
+      </ol>
+    </div>
+    <div id="expContainer">
+      <h2>Formação Acadêmica</h2>
+      <div id="exp01" class="exp">
+        <h3>Lorem ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+      <div id="exp02" class="exp">
+        <h3>Lorem ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+      <div id="exp03" class="exp">
+        <h3>Lorem ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="w3-display-container">
+    <div class="w3-display-middle" id="links">
+      <img onclick="share(this)" id="facebook" href="https://www.facebook.com/people/Marcelo-Rodrigues/100004629636017" class="fab fa-facebook-f">
+      <img onclick="share(this)" id="github" href="https://github.com/Marcelo-RM" class="fab fa-github">
+      <img onclick="share(this)" id="linkedin" href="https://www.linkedin.com/in/marcelo-rodrigues-76046717b/" class=" fab fa-linkedin-in">
+      <img onclick="share(this)" id="whatsapp" href="https://wa.me/5561998657241/?text='Hi, I saw your site'" class="fab fa-whatsapp">
+    </div>
+  </footer>
+</body>
 </html>
