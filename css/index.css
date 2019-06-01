@@ -18,11 +18,13 @@ a {
 /* BUSY */
 
 #busy {
-    position: absolute;
+    position: fixed;
     background-color: black;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 5000;
+    top: 0;
+    left: 0;
     clear: both;
     text-align: center;
 }
@@ -54,7 +56,7 @@ a {
     /* 219px Expandido || -28px Ao canto */
     top: 280px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 80px;
     height: 25px;
     background-color: #06bcfb;
@@ -96,6 +98,17 @@ a {
     top: 0;
     right: 0;
     position: relative;
+}
+
+#imgHeader {
+  background-color: #025a6c;
+  left: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
 }
 
 .logo {
@@ -193,106 +206,6 @@ a {
 #subBody {
     width: 100%;
     color: #ccc;
-}
-
-#formacaoContainer {
-    width: 50%;
-    padding-left: 5px;
-    margin: 0;
-}
-
-.activity-feed {
-    padding: 15px;
-    list-style: none;
-}
-
-.feed-item:hover {
-    border: 0 cursor: default;
-}
-
-.activity-feed .feed-item {
-    position: relative;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 5px;
-    border-left: 5px solid #ccc;
-}
-
-.activity-feed .feed-item:last-child {
-    border-color: transparent;
-}
-
-.activity-feed .feed-item::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -18px;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    background: #444;
-    border: 2px solid #06bcfb;
-}
-
-.feed-item:hover:after {
-    background-color: #06bcfb;
-}
-
-.activity-feed .feed-item .date {
-    display: block;
-    position: relative;
-    top: -5px;
-    color: #8c96a3;
-    text-transform: uppercase;
-    font-size: 13px;
-}
-
-.activity-feed .feed-item .text {
-    position: relative;
-    top: -3px;
-}
-
-#expContainer {
-    width: 50%;
-    float: right;
-    padding: 5px;
-    margin: 0;
-    margin-bottom: 14px;
-    clear: both;
-}
-
-.exp {
-    color: #ccc;
-}
-
-.exp h3 {
-    color: #025a6c;
-    font-size: 18px;
-    background-color: #06bcfb;
-    padding: 8px;
-    border-top-left-radius: 16px;
-    padding-left: 16px;
-    padding-bottom: 20px;
-    margin-bottom: -22px;
-    cursor: pointer;
-    box-shadow: 0 -1px 20px 5px #333;
-}
-
-.exp p {
-    display: none;
-    border: 1px solid #06bcfb;
-}
-
-.exp p:hover {
-    display: block;
-}
-
-
-.expShow {
-    padding: 16px;
-    background-color: #025a6c;
-    margin-bottom: -22px;
 }
 
 
