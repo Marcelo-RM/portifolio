@@ -12,6 +12,11 @@ $(document).ready(function () {
 	 */
 
 	$("ul li").click(function (event) {
+		var li = event.target.getAttribute("id");
+		if(li === "projetos"){
+			showHideProjetos();
+			return;
+		}
 		var link = event.target.getAttribute("href");
 		var text = event.target.innerText;
 		var className = $(".listBar li")[0].getAttribute("class");
@@ -46,6 +51,12 @@ $(document).ready(function () {
 				});
 			}
 		}
+	});
+
+	$("#listaProjetos a").click(function(event){
+		$("listaProjetos").css({
+			display: "none"
+		});
 	});
 
 	/**
@@ -116,6 +127,20 @@ function openForm(event) {
 			right: '-250px'
 		}, "slow");
 	}
+}
+
+function showHideProjetos(){
+	var display = $("#listaProjetos").css("display");
+
+	if(display === "block"){
+		var cssConfig = "none"
+	}else{
+		cssConfig = "block"
+	}
+
+	$("#listaProjetos").css({
+		display: cssConfig
+	});
 }
 
 /**

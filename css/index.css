@@ -143,7 +143,7 @@ a {
     display: inline-block;
     padding: 15px;
     height: 100%;
-    margin: 1;
+    margin: 1px;
 }
 
 .listBar li:hover {
@@ -195,6 +195,18 @@ a {
     }
     /*  50% { transform: rotate(180deg);}
   100% { transform: rotate(360deg);}*/
+}
+
+#listaProjetos {
+  display: none;
+  position: absolute;
+  top: 50px;
+  background-color: #025a6c;
+  color: white;
+}
+
+#listaProjetos a{
+  margin: 10px;
 }
 
 
@@ -290,5 +302,12 @@ a {
     }
     #expContainer h3 {
         border-top-right-radius: 16px;
+    }
+    /* TODO: exibir isso em mobile, mas precisa corrigir */
+    #projetos {
+      display: none;
+    }
+    #listaProjetos {
+      position: relative;
     }
 }
