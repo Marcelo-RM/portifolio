@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcelo Montalvão</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" type="text/css" href=" css/index.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script  src="controller/index.js"></script>
+  <script src="controller/index.js"></script>
 </head>
+
 <body>
   <div id="busy" class="w3-display-container">
     <div class="w3-display-middle">
-      <img id="busyImg" alt="Aguarde"  src="imgs/logo.svg"/>
+      <img id="busyImg" alt="Aguarde" src="imgs/logo.svg" />
     </div>
   </div>
   <!-- CONTACT -->
@@ -36,7 +40,7 @@
       <div class="headerBar">
         <ul class="listBar">
           <li href="#header">Início</li>
-          <li href="#formacaoContainer" id="projetos">
+          <li href="#sectionsProjects" id="projetos">
             Projetos
             <div id="listaProjetos">
               <a href="#SAPUI5">SAPUI5</a><br>
@@ -46,29 +50,64 @@
               <a href="#React">React</a><br>
             </div>
           </li>
-          <li href="#expContainer">Contato</li>
+          <li href="#footer">Contato</li>
           <li id="menu" href="#">MENU</li>
         </ul>
       </div>
-      <div class="logo w3-display-middle">
-        <img id="logo"  src="imgs/logo.svg"/>
-      </div>
     </div>
-    <a href="javascript:void(0)" onclick="hideHeader(this)" local="#formacaoContainer" id="linkArrow">
+    <a href="javascript:void(0)" onclick="hideHeader(this)" local="#sectionsProjects" id="linkArrow">
       <img id="arrowDown" class="w3-display-bottommiddle fas fa-angle-down">
     </a>
     <img src="imgs/satellite.jpg" alt="img header" id="imgHeader">
   </header>
   <div id="subBody">
+    <div class="sectionsProjects" id="sectionsProjects">
+      <h1>Meus projetos</h1>
+      <div id="sapui5Section" class="sections">
+        <h2>
+          SAPUI5
+          <img class="logos" src="imgs/SAPLogo.gif" alt="Sap logo" width="60px" height="30px">
+        </h2>
 
+        <div class="tiles sapui5Apps w3-round-large" style="float: left">
+          <img src="imgs/sapui5.svg" alt="sapui5 app" width="200px" height="200px">
+          <p>Lorem Ipsum Dolor sit amet</p>
+        </div>
+
+        <div class="tiles sapui5Apps w3-round-large" style="float: right">
+          <img src="imgs/sapui5.svg" alt="sapui5 app" width="200px" height="200px">
+          <p>Lorem Ipsum Dolor sit amet</p>
+        </div>
+
+        <div class="tiles sapui5Apps w3-round-large" style="float: left">
+          <img src="imgs/sapui5.svg" alt="sapui5 app" width="200px" height="200px">
+          <p>Lorem Ipsum Dolor sit amet</p>
+        </div>
+
+        <div class="tiles sapui5Apps w3-round-large" style="float: right">
+          <img src="imgs/sapui5.svg" alt="sapui5 app" width="200px" height="200px">
+          <p>Lorem Ipsum Dolor sit amet</p>
+        </div>
+
+        <h2>
+          jQuery
+          <img src="imgs/jquery.png" alt="logo jQuery" width="30px" height="30px">
+        </h2>
+
+      </div>
+    </div>
   </div>
   <footer id="footer" class="w3-display-container">
     <div class="w3-display-middle" id="links">
-      <img onclick="share(this)" id="facebook" href="https://www.facebook.com/people/Marcelo-Rodrigues/100004629636017" class="fab fa-facebook-f">
+      <img onclick="share(this)" id="facebook" href="https://www.facebook.com/people/Marcelo-Rodrigues/100004629636017"
+        class="fab fa-facebook-f">
       <img onclick="share(this)" id="github" href="https://github.com/Marcelo-RM" class="fab fa-github">
-      <img onclick="share(this)" id="linkedin" href="https://www.linkedin.com/in/marcelo-rodrigues-76046717b/" class=" fab fa-linkedin-in">
-      <img onclick="share(this)" id="whatsapp" href="https://wa.me/5561998657241/?text='Hi, I saw your site'" class="fab fa-whatsapp">
+      <img onclick="share(this)" id="linkedin" href="https://www.linkedin.com/in/marcelo-rodrigues-76046717b/"
+        class=" fab fa-linkedin-in">
+      <img onclick="share(this)" id="whatsapp" href="https://wa.me/5561998657241/?text='Hi, I saw your site'"
+        class="fab fa-whatsapp">
     </div>
   </footer>
 </body>
+
 </html>

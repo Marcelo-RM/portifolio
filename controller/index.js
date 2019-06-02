@@ -4,7 +4,6 @@
 
 $(document).ready(function () {
 	$("#busy").css("display", "none");
-	$(".header").css("height", $(window).innerHeight());
 
 	/**
 	 * header list menu method
@@ -13,7 +12,7 @@ $(document).ready(function () {
 
 	$("ul li").click(function (event) {
 		var li = event.target.getAttribute("id");
-		if(li === "projetos"){
+		if (li === "projetos") {
 			showHideProjetos();
 			return;
 		}
@@ -53,8 +52,8 @@ $(document).ready(function () {
 		}
 	});
 
-	$("#listaProjetos a").click(function(event){
-		$("listaProjetos").css({
+	$("#listaProjetos a").click(function (event) {
+		$("#listaProjetos").css({
 			display: "none"
 		});
 	});
@@ -129,12 +128,12 @@ function openForm(event) {
 	}
 }
 
-function showHideProjetos(){
+function showHideProjetos() {
 	var display = $("#listaProjetos").css("display");
 
-	if(display === "block"){
+	if (display === "block") {
 		var cssConfig = "none"
-	}else{
+	} else {
 		cssConfig = "block"
 	}
 
