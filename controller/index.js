@@ -75,6 +75,26 @@ $(document).ready(function () {
 			$("#" + pId + " p").slideDown();
 		}
 	});
+
+	/**
+	 * Metodo chamado quando clica em um app
+	 * @event {object} elemento da view, tile usando target
+	 */
+	$(".tiles").click(function(event){debugger;
+		var classe = event.target.getAttribute("class");
+		var link = encodeURI(event.target.getAttribute("link"));
+		if(!classe){
+			classe = event.target.parentElement.getAttribute("class");
+			link = encodeURI(event.target.parentElement.getAttribute("link"));
+		}
+		
+		if(classe.indexOf('active') === -1){
+			return;
+		}
+;
+		window.open(link);
+
+	})
 });
 
 /**********************/

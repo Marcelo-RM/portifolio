@@ -246,6 +246,15 @@ a {
     text-align: center;
 }
 
+.active {
+    cursor: pointer;
+}
+
+.bloqued {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
 .left {
     float: left;
 }
