@@ -240,6 +240,7 @@ a {
 .tiles {
     background-color: #555;
     border: 5px solid #06bcfb;
+    color: white;
     width: 400px;
     height: 300px;
     margin: 10px;
