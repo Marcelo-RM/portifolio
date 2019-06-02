@@ -225,17 +225,16 @@ a {
 .sections {
     width: 100%;
     padding: 50px;
-    clear: both;
 }
 
 .sectionsProjects {
-    background-color: #3B5998;
+    background-color: rgb(233, 232, 232);
+    color: #000;
     margin: auto;
     padding: 20px;
-    height: 100%;
+    bottom: 0;
     width: 1000px;
     position: relative;
-    clear: both;
 }
 
 .tiles {
@@ -246,6 +245,11 @@ a {
     margin: 10px;
     text-align: center;
     padding: 20px;
+}
+
+.tiles img{
+    width: 300px;
+    height: 200px;
 }
 
 .active {
@@ -306,6 +310,10 @@ a {
     background-color: #025a6c;
     clear: both;
     box-shadow: 0 1px 20px 1px #000;
+}
+
+.invisible {
+    visibility: hidden; 
 }
 
 
@@ -370,5 +378,9 @@ a {
     .tiles{
         width: 70vw;
         margin: 10px auto;
+    }
+    .tiles img{
+        width: 100%;
+        height: 60%;
     }
 }

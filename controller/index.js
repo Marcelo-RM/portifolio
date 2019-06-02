@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 		if (text !== "MENU") {
 			$("html, body").animate({
-				scrollTop: $(link).offset().top - 50
+				scrollTop: $(link).offset().top - 150
 			}, "slow");
 			if (className) {
 				$(".listBar li").removeClass("menuPhone");
@@ -91,7 +91,7 @@ $(document).ready(function () {
 		if(classe.indexOf('active') === -1){
 			return;
 		}
-;
+
 		window.open(link);
 
 	})
