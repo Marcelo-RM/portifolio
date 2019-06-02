@@ -242,8 +242,10 @@ a {
     background-color: #555;
     border: 5px solid #06bcfb;
     width: 400px;
+    height: 300px;
     margin: 10px;
     text-align: center;
+    padding: 20px;
 }
 
 .active {
