@@ -112,12 +112,22 @@ a {
   z-index: 5;
 }
 
-#textoMaster {
+#divTextoMaster {
+    text-align: left;
 	position: absolute;
 	top: 5%;
 	left: 10%;
 	z-index: 6;
 	color: white;
+}
+
+.textoMaster{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    font-size: 24px;
+}
+
+.nome{
+    font-size: 40px;
 }
 
 header {
