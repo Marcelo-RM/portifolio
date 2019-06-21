@@ -116,7 +116,7 @@ a {
     text-align: left;
 	position: absolute;
 	top: 5%;
-	left: 10%;
+	left: 5%;
 	z-index: 6;
 	color: white;
 }
@@ -127,7 +127,11 @@ a {
 }
 
 .nome{
-    font-size: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(rgb(20, 20, 20), #fff, rgb(20, 20, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header {
