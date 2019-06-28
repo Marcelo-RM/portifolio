@@ -237,7 +237,13 @@ header {
 }
 
 #listaProjetos a{
-  margin: 10px;
+    padding: 5px 10px;
+    display: -webkit-inline-box;
+}
+
+#listsaProjetos a:hover{
+    color: #06bcfb;
+    background-color: #06bcfb;
 }
 
 

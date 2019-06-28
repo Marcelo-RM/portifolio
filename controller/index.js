@@ -10,12 +10,30 @@ $(document).ready(function () {
 	 * @event is the click event
 	 */
 
-	$("ul li").click(function (event) {
-		var li = event.target.getAttribute("id");
-		if (li === "projetos") {
-			showHideProjetos();
-			return;
+	$("ul li").hover(
+		(oEvent) => {
+			var li = event.target.getAttribute("id");
+			if (li === "projetos" ) {
+				showHideProjetos();
+				return;
+			}
+		},
+		(oEvent) => {
+			var li = event.target.getAttribute("id");
+			var parentId = event.target.parentElement.getAttribute("id");
+			if (li === "projetos" || parentId === "listaProjetos" || parentId === "projetos") {
+				showHideProjetos();
+				return;
+			}
 		}
+	);
+
+	$("ul li").click(function (event) {
+		//var li = event.target.getAttribute("id");
+		//if (li === "projetos") {
+		//	showHideProjetos();
+		//	return;
+		//}
 		var link = event.target.getAttribute("href");
 		var text = event.target.innerText;
 		var className = $(".listBar li")[0].getAttribute("class");
