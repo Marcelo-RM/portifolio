@@ -112,7 +112,10 @@ $(document).ready(function () {
 
 		window.open(link);
 
-	})
+	});
+
+	//Prevent drag images on site
+	$('img').on('dragstart', function(event) { event.preventDefault(); });
 });
 
 /**********************/
