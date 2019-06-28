@@ -18,3 +18,6 @@ cp.project.properties.json
 .eslintrc
 .eslintrc.ext
 --------------------------------- SAP WEB IDE
+
+
+.vscode
