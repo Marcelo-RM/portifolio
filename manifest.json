@@ -1,0 +1,20 @@
+{
+    "short_name": "Portifolio",
+    "name": "Marcelo Montalvão",
+    "theme_color": "#3367D6",
+    "icons": [{
+            "src": "imgs/logo.svg",
+            "type": "image/svg",
+            "sizes": "192x192"
+        },
+        {
+            "src": "imgs/logo.svg",
+            "type": "image/svg",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/?utm_source=homescreen",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/"
+}
