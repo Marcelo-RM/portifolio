@@ -21,3 +21,6 @@ cp.project.properties.json
 
 .vs
 .vscode
+AppVariantPreviewPayload.zip
+mergedManifestDescriptor.json
+/mta_archives/
