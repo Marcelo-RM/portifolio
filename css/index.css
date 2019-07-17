@@ -370,7 +370,7 @@ header {
 
 /* Code for development responsive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .listBar {
         width: 100%;
         margin: -20px;
