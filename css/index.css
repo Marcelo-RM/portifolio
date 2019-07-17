@@ -383,6 +383,9 @@ header {
     #menu {
         display: inline;
     }
+    #divTextoMaster {
+        top: 3%;
+    }
     #logo {
         width: 90%;
     }
