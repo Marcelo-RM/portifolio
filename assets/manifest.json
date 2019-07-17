@@ -2,7 +2,7 @@
     "name": "Portifólio Marcelo Montalvão",
     "short_name": "Portifólio",
     "lang": "pt-BR",
-    "start_url": "/",
+    "start_url": "./",
     "background_color": "#444444",
     "theme_color": "#025a6c",
     "display": "standalone",
