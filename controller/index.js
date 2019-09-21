@@ -40,7 +40,7 @@ function share(event) {
  * @event não será utilizado
  */
 
- function showHideModal(){
+function showHideModal(){
     var modal = document.getElementById("cursos");
 
     if(modal.style.display === "none" || modal.style.display === ""){
@@ -48,4 +48,10 @@ function share(event) {
     } else {
         modal.style.display = "none";
     }
- }
+}
+
+window.onclick = function(event){
+    if(document.getElementById("cursos") === event.target){
+        this.showHideModal();
+    }
+};
