@@ -38,7 +38,7 @@
 <body class="w3-light-grey">
     <div class="w3-content w3-margin-top w3-margin-bottom">
         <div class="w3-row-padding">
-            <div class="w3-third">
+            <div class="w3-third w3-margin-bottom">
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
                         <img src="imgs/perfil.png" alt="Logo" style="width:100%;">
@@ -94,7 +94,6 @@
             <!--Container left-->
             <!-- Right Column -->
             <div class="w3-twothird">
-
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
                     <h2 class="w3-text-grey w3-padding-16">
                         <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>
@@ -132,6 +131,21 @@
                     </div>
                     <br>
                 </div>
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16">
+                        <i class="fas fa-book-open w3-margin-right w3-xxlarge w3-text-indigo"></i>
+                        Cursos Extracurriculares
+                    </h2>
+                    <div class="w3-container">
+                        <button class="w3-btn w3-white w3-border w3-border-indigo w3-round-large w3-margin-bottom w3-display-container"
+                                style="padding-right: 30px;"
+                                onclick="showHideModal()">
+                            Visualizar
+                            <i class="fas fa-external-link-alt w3-display-topright w3-text-indigo" style="margin: 5px 5px 0 0;"></i>
+                    </button>
+                        <p class="w3-text-grey" style="margin-top: 2px;">Exibe uma lista com todos os cursos já realizados!</p>
+                    </div>
+                </div>
                 <div class="w3-container w3-card w3-white">
                     <h2 class="w3-text-grey w3-padding-16">
                         <i class="fas fa-laptop-code w3-margin-right w3-xxlarge w3-text-indigo"></i>
@@ -147,8 +161,22 @@
                         </a>
                         <p class="w3-text-grey" style="margin-top: 2px;">Você será redirecionado para uma nova página!</p>
                     </div>
-                </div> 
+                </div>
             </div><!-- End Right Column -->
+        </div>
+    </div>
+
+    <!--Pop up para exibição dos cursos-->
+    <div id="cursos" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <h3 class="w3-margin w3-opacity">Cursos Extracurriculares</h3>
+                <span class="w3-display-topright w3-margin w3-opacity w3-xlarge closeModal"
+                onclick="showHideModal()">&times;</span>
+            </div>
+            <div id="listaCursos" class="w3-container w3-margin-top">
+                <!--Itens são criados dinamicamente usando jquery e json-->
+            </div>
         </div>
     </div>
 

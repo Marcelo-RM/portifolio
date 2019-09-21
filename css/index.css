@@ -39,3 +39,9 @@
     background-color: white;
     color: black;
 }
+
+.closeModal:hover{
+    cursor: pointer;
+    color: black;
+    opacity: 1;
+}
