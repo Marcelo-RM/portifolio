@@ -18,7 +18,7 @@ $(document).ready(function() {
         $('#listaCursos').html(output);
     };
 
-    $.getJSON('/models/cursos.json', success);
+    $.getJSON('portifolio/models/cursos.json', success);
 });
 
 /**********************/
