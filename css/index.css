@@ -14,7 +14,8 @@
 #whatsapp,
 #facebook,
 #github,
-#linkedin {
+#linkedin,
+#codepen {
     width: 35px;
     height: 35px;
     padding: 3px;
@@ -38,6 +39,10 @@
 #github:hover {
     background-color: white;
     color: black;
+}
+
+#codepen:hover {
+    background-color: black;
 }
 
 .closeModal:hover{
