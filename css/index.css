@@ -15,7 +15,8 @@
 #facebook,
 #github,
 #linkedin,
-#codepen {
+#codepen,
+#instagram {
     width: 35px;
     height: 35px;
     padding: 3px;
@@ -43,6 +44,10 @@
 
 #codepen:hover {
     background-color: black;
+}
+
+#instagram:hover {
+    background-image: linear-gradient(135deg,blue, blue, purple, red, orange, yellow);
 }
 
 .closeModal:hover{
