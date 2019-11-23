@@ -205,20 +205,34 @@
     </footer>
 
     <script>
-        Notification.requestPermission(function(status) {
-            console.log('Notification permission status:', status);
-        });
-
         function displayNotification() {
             if (Notification.permission === 'granted') {  
                 navigator.serviceWorker.getRegistration()
                 .then(function(reg){
-                reg.showNotification('Hello world!', {title: 'Titulo', body: "Corpo da notificação"});
+                reg.showNotification('Obrigado!', {
+                        body: "Obrigado por visitar!",
+                        title: "Marcelo Montalvão",
+                        icon: "imgs/perfil.png", //"/assets/apple-icon-60x60.png"
+                        vibrate: [800, 100, 500],
+                        /*
+                        actions: [
+                            {
+                                action: show(),
+                                title: "TESTE",
+                                icon: "assets/apple-icon-60x60.png"
+                            }
+                        ]
+                        */
+                    });
                 });
             }
-        } 
+        }
 
-        displayNotification();
+        Notification.requestPermission(function(status) {
+            if(status === "granted"){
+                displayNotification();
+            }
+        });
     </script>
 </body>
 
