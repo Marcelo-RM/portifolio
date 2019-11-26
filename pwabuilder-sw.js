@@ -35,3 +35,29 @@ self.addEventListener("fetch", function(event) {
         })
     );
 });
+
+self.addEventListener("push", function(event){
+    console.log("[PWA Builder] Push received");
+    console.log(`[PWA Builder] Push has this data: "${event.data.text()}"`);
+    console.log(`[PWA Builder] ${event.data.text()}`);
+
+    const title = "Marcelo Montlvão";
+    const options = {
+        body: "Obrigado por visitar!",
+        icon: "imgs/perfil.png", //"/assets/apple-icon-60x60.png"
+        vibrate: [800, 100, 500],
+        badge: "assets/favicon-16x16.png"
+    };
+
+    event.waitUntil(self.registration.showNotification(title, options));
+});
+
+self.addEventListener('notificationclick', function(event) {
+    console.log('[Service Worker] Notification click Received.');
+  
+    event.notification.close();
+  
+    event.waitUntil(
+      clients.openWindow('https://marcelo-rm.github.io/portifolio')
+    );
+  });

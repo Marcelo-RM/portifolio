@@ -100,7 +100,7 @@
                         Experiência Profissional
                     </h2>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Desenvolvedor SAPUI5 / União Química</b></h5>
+                        <h5 class="w3-opacity"><b>Desenvolvedor Front-end / União Química</b></h5>
                         <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
                             Ago 2018 - <span class="w3-tag w3-indigo w3-round">Atualmente</span></h6>
                         <p>Desenvolvimento de aplicações web usando framework sapui5, e asp.net.</p>
@@ -205,32 +205,20 @@
     </footer>
 
     <script>
-        function displayNotification() {
-            if (Notification.permission === 'granted') {  
+        window.addEventListener('beforeunload', (event) => {
+            if (Notification.permission === 'granted') {
                 navigator.serviceWorker.getRegistration()
-                .then(function(reg){
-                reg.showNotification('Obrigado!', {
+                .then(function (reg) {
+                    const title = "Marcelo Montlvão";
+                    const options = {
                         body: "Obrigado por visitar!",
-                        title: "Marcelo Montalvão",
                         icon: "imgs/perfil.png", //"/assets/apple-icon-60x60.png"
                         vibrate: [800, 100, 500],
-                        /*
-                        actions: [
-                            {
-                                action: show(),
-                                title: "TESTE",
-                                icon: "assets/apple-icon-60x60.png"
-                            }
-                        ]
-                        */
-                    });
-                });
-            }
-        }
+                        badge: "assets/favicon-16x16.png"
+                    };
 
-        Notification.requestPermission(function(status) {
-            if(status === "granted"){
-                displayNotification();
+                    reg.showNotification(title, options)
+                });
             }
         });
     </script>
