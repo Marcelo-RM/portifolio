@@ -5,10 +5,16 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .styleHR {
     border: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #3f51b5, rgba(0, 0, 0, 0));
     height: 1px;
+}
+
+.modalScroll {
+    height: 75vh;
+    overflow: auto;
 }
 
 #whatsapp,

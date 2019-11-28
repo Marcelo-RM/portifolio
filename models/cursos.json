@@ -1,5 +1,70 @@
 [
     {
+        "nome": "Git e controle de versões",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Mai 2019"
+    },
+    {
+        "nome": "JavaScript ES6 essencial",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Jun 2019"
+    },
+    {
+        "nome": "Fundamentos da arquitetura de sistemas",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Nov 2019"
+    },
+    {
+        "nome": "UX & Design Thinking",
+        "escola": "Udemy - Leandro Rezende",
+        "dataConclusao": "Nov 2019"
+    },
+    {
+        "nome": "Introdução ao GitHub e comandos essenciais",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Mai 2019"
+    },
+    {
+        "nome": "Introdução à biblioteca JQuery",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Jun 2019"
+    },
+    {
+        "nome": "Web Moderno com JavaScript",
+        "escola": "Udemy - C0d3r",
+        "dataConclusao": "Nov 2019"
+    },
+    {
+        "nome": "Programação para internet com HTML5 e CSS3",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Jun 2019"
+    },
+    {
+        "nome": "Fundamentos de lógica de Programação",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Mai 2019"
+    },
+    {
+        "nome": "Contruindo páginas para internet com Bootstrap",
+        "escola": "Digital Innovation one",
+        "dataConclusao": "Nov 2019"
+    },
+    {
+        "nome": "Programação para internet com JavaScript",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Jul 2019"
+    },
+    {
+        "nome": "Projetos ágeis com SCRUM",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Nov 2019"
+    },
+    {
+        "nome": "Desenvolvimento avançado com Javascript ES6",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Nov 2019"
+    },
+    {
         "nome": "Evolved web apps with SAPUI5",
         "escola": "Open Sap",
         "dataConclusao": "Jun 2019"
@@ -60,9 +125,19 @@
         "dataConclusao": "Mar 2018"
     },
     {
-        "nome": "Sql completo",
+        "nome": "SQL completo",
         "escola": "Softblue",
         "dataConclusao": "Mar 2018"
+    },
+    {
+        "nome": "Web Design",
+        "escola": "Escola Virtual Bradesco",
+        "dataConclusao": "Jul 2018"
+    },
+    {
+        "nome": "HTML - Avançado",
+        "escola": "Escola Virtual Bradesco",
+        "dataConclusao": "Jul 2018"
     },
     {
         "nome": "Análise estruturada de sistemas",
