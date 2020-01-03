@@ -1,5 +1,10 @@
 [
     {
+        "nome": "Lógica de Programação essencial",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Jan 2020"
+    },
+    {
         "nome": "Git e controle de versões",
         "escola": "Digital Innovation One",
         "dataConclusao": "Mai 2019"
