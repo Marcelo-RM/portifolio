@@ -29,9 +29,19 @@
     color: white;
     margin-top: 5px;
     border-radius: 20%;
+    cursor: pointer;
 }
 
-#whatsapp:hover {
+#whatsapp:hover,
+#facebook:hover,
+#linkedin:hover,
+#github:hover,
+#codepen:hover,
+#instagram:hover {
+    background-color: #fff;
+    color: #3f51b5;
+}
+/* #whatsapp:hover {
     background-color: green;
 }
 
@@ -54,7 +64,7 @@
 
 #instagram:hover {
     background-image: linear-gradient(135deg,blue, blue, purple, red, orange, yellow);
-}
+} */
 
 .closeModal:hover{
     cursor: pointer;
