@@ -1,14 +1,12 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-BR"> 
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcelo Montalvão</title>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
         integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
         </script>
@@ -36,7 +34,8 @@
     <meta name="msapplication-TileColor" content="#025a6c">
     <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
     <meta name="theme-color" content="#025a6c">
-    <meta name="Description" content="Desenvolvido por Marcelo Montalvão"></meta>
+    <meta name="Description" content="Desenvolvido por Marcelo Montalvão">
+    </meta>
 </head>
 
 <body class="w3-light-grey">
@@ -104,9 +103,23 @@
                         Experiência Profissional
                     </h2>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Desenvolvedor Front-end / União Química</b></h5>
-                        <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
-                            Ago 2018 - <span class="w3-tag w3-indigo w3-round">Atualmente</span></h6>
+                        <h5 class="w3-opacity"><b>Analista de Sistemas Jr / União Química</b></h5>
+                        <h6 class="w3-text-indigo">
+                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                            Ago 2018 - <span class="w3-tag w3-indigo w3-round">Atualmente</span>
+                        </h6>
+                        <p>Desenvolvimento de aplicação Fiori (web) com framework OpenUI5, ASP.NET, C#</p>
+                        <p>Desenvolvimento de aplicações web usando framework sapui5, e asp.net.</p>
+                        <p>Banco de dados SqlServer.</p>
+                        <p>Desenvolvimento mobile (Android, IOS) utilizando Flutter.</p>
+                        <hr class="styleHR">
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Estagiário TI / União Química</b></h5>
+                        <h6 class="w3-text-indigo">
+                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                            Ago 2018 - Jun 2020
+                        </h6>
                         <p>Desenvolvimento de aplicações web usando framework sapui5, e asp.net.</p>
                         <p>Consulta à banco de dados usando SqlServer.</p>
                         <p>Desenvolvimento mobile (Android, IOS) utilizando Flutter.</p>
@@ -163,8 +176,8 @@
                     </h2>
                     <div class="w3-container">
                         <a class="w3-btn w3-white w3-border w3-border-indigo w3-round-large w3-margin-bottom w3-display-container"
-                            rel="noreferrer"
-                            style="padding-right: 30px;" target="_blank" href="https://marcelo-rm.github.io/portal">
+                            rel="noreferrer" style="padding-right: 30px;" target="_blank"
+                            href="https://marcelo-rm.github.io/portal">
                             Visualizar
                             <i class="fas fa-external-link-alt w3-display-topright w3-text-indigo"
                                 style="margin: 5px 5px 0 0;"></i>
@@ -214,17 +227,17 @@
         window.addEventListener('beforeunload', (event) => {
             if (Notification.permission === 'granted') {
                 navigator.serviceWorker.getRegistration()
-                .then(function (reg) {
-                    const title = "Marcelo Montalvão";
-                    const options = {
-                        body: "Obrigado por visitar!",
-                        icon: "imgs/perfil.png", //"/assets/apple-icon-60x60.png"
-                        vibrate: [800, 100, 500],
-                        badge: "assets/favicon-16x16.png"
-                    };
+                    .then(function (reg) {
+                        const title = "Marcelo Montalvão";
+                        const options = {
+                            body: "Obrigado por visitar!",
+                            icon: "imgs/perfil.png", //"/assets/apple-icon-60x60.png"
+                            vibrate: [800, 100, 500],
+                            badge: "assets/favicon-16x16.png"
+                        };
 
-                    reg.showNotification(title, options)
-                });
+                        reg.showNotification(title, options)
+                    });
             }
         });
     </script>
