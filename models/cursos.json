@@ -1,5 +1,25 @@
 [
     {
+        "nome": "Introduction to Flutter Development Using Dart",
+        "escola": "The App Brewery",
+        "dataConclusao": "Jun 2020"
+    },
+    {
+        "nome": "Desenvolvimento de aplicações para internet com ReactJS",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Abr 2020"
+    },
+    {
+        "nome": "Introdução ao ReactJS",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Abr 2020"
+    },
+    {
+        "nome": "Performance Web Utilizando JavaScript",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Abr 2020"
+    },
+    {
         "nome": "UI Design: Design de Interfaces",
         "escola": "Udemy - Lucas Assis",
         "dataConclusao": "Jan 2020"
@@ -20,7 +40,7 @@
         "dataConclusao": "Jun 2019"
     },
     {
-        "nome": "Fundamentos da arquitetura de sistemas",
+        "nome": "Fundamentos de arquitetura de sistemas",
         "escola": "Digital Innovation One",
         "dataConclusao": "Nov 2019"
     },
