@@ -1,5 +1,10 @@
 [
     {
+        "nome": "The Complete 2020 Web Development Bootcamp",
+        "escola": "Udemy - Dr. Angela Yu (The App Brewery)",
+        "dataConclusao": "Ago 2020"
+    },
+    {
         "nome": "Introduction to Flutter Development Using Dart",
         "escola": "The App Brewery",
         "dataConclusao": "Jun 2020"
