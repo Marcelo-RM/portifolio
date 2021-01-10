@@ -1,5 +1,10 @@
 [
     {
+        "nome": "C# Completo 2020 Programação Orientada a objetos",
+        "escola": "Udemy - Nelio Alves",
+        "dataConclusao": "Jan 2021"
+    },
+    {
         "nome": "The Complete 2020 Web Development Bootcamp",
         "escola": "Udemy - Dr. Angela Yu (The App Brewery)",
         "dataConclusao": "Ago 2020"
