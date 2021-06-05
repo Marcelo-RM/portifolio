@@ -1,5 +1,30 @@
 [
     {
+        "nome": "Web API ASP .NET Core Essencial",
+        "escola": "Udemy - Macoratti",
+        "dataConclusao": "Jun 2021"
+    },
+    {
+        "nome": "SQL SERVER - Criando suas primeiras consultas",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Abr 2021"
+    },
+    {
+        "nome": "Orientação a objetos em .NET",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Abr 2021"
+    },
+    {
+        "nome": "Aprenda o que são Estrutura de dados e algoritmos",
+        "escola": "Digital Innovation One",
+        "dataConclusao": "Abr 2021"
+    },
+    {
+        "nome": "Azure DevOps - Integração Contínua e Entrega Contínua",
+        "escola": "Udemy - Higor Barbosa",
+        "dataConclusao": "Mai 2021"
+    },
+    {
         "nome": "C# Completo 2020 Programação Orientada a objetos",
         "escola": "Udemy - Nelio Alves",
         "dataConclusao": "Jan 2021"
