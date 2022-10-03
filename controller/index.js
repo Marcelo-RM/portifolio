@@ -2,23 +2,23 @@
 /* AUTOMATIC METHODS    */
 /**********************/
 
-$(document).ready(function() {
-    //Prevent drag images on site
-    $('img').on('dragstart', function(event) { event.preventDefault(); });
+$(document).ready(function () {
+  //Prevent drag images on site
+  $('img').on('dragstart', function (event) { event.preventDefault(); });
 
-    //Read json file to create list of courses
-    var success = function(data){
-        var output = '';  
-        $.each(data, function(key,val){
-          output += "<h5 class='w3-opacity'><b>"+ val.nome + '</b></h5>';
-          output += "<h6 class='w3-text-indigo'><i class='fa fa-calendar fa-fw w3-margin-right'></i>" + val.dataConclusao + "</h6>";
-          output += "<p>" + val.escola + "</p>";
-          output += "<hr class='styleHR'></hr>";
-        });
-        $('#listaCursos').html(output);
-    };
+  //Read json file to create list of courses
+  var success = function (data) {
+    var output = '';
+    $.each(data, function (key, val) {
+      output += "<h5 class='w3-opacity'><b>" + val.nome + '</b></h5>';
+      output += "<h6 class='w3-text-indigo'><i class='fa fa-calendar fa-fw w3-margin-right'></i>" + val.dataConclusao + "</h6>";
+      output += "<p>" + val.escola + "</p>";
+      output += "<hr class='styleHR'></hr>";
+    });
+    $('#listaCursos').html(output);
+  };
 
-    $.getJSON('models/cursos.json', success);
+  $.getJSON('models/cursos.json', success);
 });
 
 /**********************/
@@ -31,8 +31,8 @@ $(document).ready(function() {
  */
 
 function share(event) {
-    var site = encodeURI(event.getAttribute('href'));
-    window.open(site);
+  var site = encodeURI(event.getAttribute('href'));
+  window.open(site);
 }
 
 /**
@@ -40,18 +40,18 @@ function share(event) {
  * @event não será utilizado
  */
 
-function showHideModal(){
-    var modal = document.getElementById("cursos");
+function showHideModal() {
+  var modal = document.getElementById("cursos");
 
-    if(modal.style.display === "none" || modal.style.display === ""){
-        modal.style.display = "block";
-    } else {
-        modal.style.display = "none";
-    }
+  if (modal.style.display === "none" || modal.style.display === "") {
+    modal.style.display = "block";
+  } else {
+    modal.style.display = "none";
+  }
 }
 
-window.onclick = function(event){
-    if(document.getElementById("cursos") === event.target){
-        this.showHideModal();
-    }
+window.onclick = function (event) {
+  if (document.getElementById("cursos") === event.target) {
+    this.showHideModal();
+  }
 };
